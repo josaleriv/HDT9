@@ -5,17 +5,17 @@
  */
 package driverhdt9;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author joserivera
  */
-import java.util.ArrayList;
-
-class SimpleSet implements WordSet
+class HashTable implements WordSet
 {
 	private ArrayList<Word> base;
 	
-	public SimpleSet(){
+	public HashTable(){
 		base = new ArrayList<Word>();
 	}
 	
@@ -24,7 +24,6 @@ class SimpleSet implements WordSet
 		if(index == -1) return null;
 		return base.get(index);
 	}
-	
 	public void add(Word wordObject){
 		base.add(wordObject);
 	}

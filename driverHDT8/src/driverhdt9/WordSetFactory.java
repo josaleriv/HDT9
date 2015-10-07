@@ -23,7 +23,7 @@ class WordSetFactory {
 	    if (tipo == 1){
                 return new SimpleSet();
             }
-            /*else if (tipo == 2){
+            else if (tipo == 2){
                 return new RedBlackTree();
             }
             else if (tipo == 3){
@@ -34,7 +34,7 @@ class WordSetFactory {
             }
             else if (tipo == 5){
                 return new TreeMap();
-            }*/
+            }
             else{
                 return null;
             }
