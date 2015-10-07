@@ -8,7 +8,7 @@ import java.io.*;
 
 /**
  *
- * @author joserivera
+ * @author Jose Alejandro Rivera, 14213; Marcos Benedict, 14368; Gabriel Martinez, 14070; Arturo Garcia, 14186.
  */
 public class driverHDT9 {
 	public static void main(String[] args) throws Exception
