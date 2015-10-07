@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package driverhdt8;
+package driverhdt9;
 import java.io.*;
 
 /**
  *
  * @author joserivera
  */
-public class DriverHDT8 {
+public class driverHDT9 {
 	public static void main(String[] args) throws Exception
 	{
 		if(args.length > 1)
