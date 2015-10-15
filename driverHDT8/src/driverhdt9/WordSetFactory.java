@@ -33,7 +33,7 @@ class WordSetFactory {
                 return new HashTable();
             }
             else if (tipo == 5){
-                return new TreeMap();
+                return new TreeMaps();
             }
             else{
                 return null;
