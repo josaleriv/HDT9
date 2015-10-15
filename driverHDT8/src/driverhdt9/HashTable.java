@@ -6,25 +6,30 @@
 package driverhdt9;
 
 import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Hashtable;
 
 /**
  *
  * @author Jose Alejandro Rivera, 14213; Marcos Benedict, 14368; Gabriel Martinez, 14070; Arturo Garcia, 14186.
  */
-class HashTable implements WordSet
+class HashTable implements WordSet   
 {
-	private ArrayList<Word> base;
-	
-	public HashTable(){
-		base = new ArrayList<Word>();
-	}
-	
-	public Word get(Word word){
-		int index = base.indexOf(word);
-		if(index == -1) return null;
-		return base.get(index);
-	}
-	public void add(Word wordObject){
-		base.add(wordObject);
-	}
+    Hashtable<String, String> hush = new Hashtable<String, String>();
+    public void add(Word wordObject) {
+        hush.put(wordObject.getWord(),wordObject.getType());
+    }
+
+    @Override
+    public Word get(Word word) {
+        hush.containsValue(word.getWord());
+        if(hush.containsKey(word.getWord())==true){
+            Word verdad=new Word();
+            verdad.setWord(word.getWord());
+            verdad.setType(hush.get(word.getWord()));
+            return verdad;
+        }else{
+            return null;
+        }
+    }
 }
